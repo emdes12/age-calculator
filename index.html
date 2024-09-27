@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="./script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: var(--light-grey)">
+    <div class="container">
+      <form id="form">
+        <div class="inputs">
+          <label for="day">
+            Day
+            <input maxlength="2" :focus type="number" name="day" placeholder="DD" />
+          </label>
+          <label for="month">
+            Month
+            <input type="number" name="month" maxlength="2" placeholder="MM" />
+          </label>
+          <label for="year">
+            Year
+            <input type="number" name="year" placeholder="YYYY" />
+          </label>
+        </div>
+  
+        <div class="divider">
+          <div class="divider-line"></div>
+          <button type="submit" class="submit-arrow"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </div>
+      </form>
+
+      <div id="results">
+        <div> <span class="years">--</span> years </div>
+        <div> <span class="months">--</span> months </div>
+        <div> <span class="days">--</span> days </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="facebook.com/da.emperorD">Alawiye Muritala A.</a>.
+    </div>
+  </body>
+</html>
